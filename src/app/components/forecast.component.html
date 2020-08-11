@@ -1,0 +1,42 @@
+<div class="content" role="main">
+
+    <!-- Highlight Card -->
+    <div class="card highlight-card card-small">
+      <h1 *ngIf="city">{{title}} {{city}}</h1>
+    </div>
+  
+    <div class="card highlight-card card-small">
+      <div *ngIf="forecast" class="forecast">
+        <div class="global">
+          <em>{{forecast.date}}</em>
+          <span>{{forecast.headline}}</span>
+        </div>
+        
+        <div class="icon-container day">
+          <h2>Day</h2>
+          <img
+                src="https://developer.accuweather.com/sites/default/files/{{getIconName(forecast.day.icon)}}"
+                alt="forecast.day.text"
+            />
+          <span>{{forecast.day.text}}</span>
+        </div>
+        <div class="icon-container night">
+          <h2>Night</h2>
+          <img
+                src="https://developer.accuweather.com/sites/default/files/{{getIconName(forecast.night.icon)}}"
+                alt="forecast.night.text"
+            />
+          <span>{{forecast.night.text}}</span>
+        </div>
+        <div class="temp-container">
+          <span>From: {{forecast.temp.min}} {{forecast.temp.unit}} &deg;</span>
+          <span>To: {{forecast.temp.max}} {{forecast.temp.unit}} &deg;</span>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  
+  
