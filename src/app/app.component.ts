@@ -10,6 +10,6 @@ import { ForecastComponent } from './components//forecast.component';
 export class AppComponent {
   constructor(injector: Injector) {
     const weather = createCustomElement(ForecastComponent, {injector});
-    customElements.define('weather-mfe', ForecastComponent);
+    customElements.define('weather-mfe', weather);
   }
 }
