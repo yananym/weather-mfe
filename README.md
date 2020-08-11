@@ -1,4 +1,5 @@
 # WeatherMfe
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e61c340b-6741-4e02-9017-19fa414fe73b/deploy-status)](https://app.netlify.com/sites/weather-mfe/deploys)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 This is an example of a simple Weather App Angular Component. 
